@@ -1,16 +1,21 @@
-[tool.poetry]
+[project]
 name = "ex1"
 version = "0.1.0"
-description = "ex1"
-authors = ["Your Name <you@example.com>"]
+description = ""
+authors = [
+    {name = "Example",email = "example@gmail.com"}
+]
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib (>=3.7.2,<4.0.0)",
+    "pandas (>=2.1.0,<3.0.0)",
+    "requests (>=2.31.0,<3.0.0)",
+    "numpy (>=1.26.0,<2.0.0)"
+]
 
-[tool.poetry.dependencies]
-python = "^3.12"
-requests = "2.32.5"
-matplotlib = "3.10.8"
-pandas = "3.0.1"
-
+[tool.poetry]
+package-mode = false
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
