@@ -21,7 +21,7 @@ def main():
         print(f"Virtual Environment: {os.getenv(venv_name)} detected\n")
 
         print("WARNING: You're in the global environment!")
-        print("The matchines can see everything you install.")
+        print("The machines can see everything you install.")
 
         print("\nTo enter the construct, run:")
         print("python -m venv matrix_env")
